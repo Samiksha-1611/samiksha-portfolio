@@ -1,21 +1,14 @@
 const sections = document.querySelectorAll("main section[id]");
-const currentSection = document.getElementById("current-section");
 const navLinks = document.querySelectorAll(".nav-links a");
 
-function updateActiveSection() {
-    let current = "home";
+function updateActiveLink() {
+    let current = sections[0]?.id || "home";
 
     sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 180;
-
-        if (window.scrollY >= sectionTop) {
+        if (window.scrollY >= section.offsetTop - 220) {
             current = section.id;
         }
     });
-
-    if (currentSection) {
-        currentSection.textContent = current.toUpperCase();
-    }
 
     navLinks.forEach((link) => {
         link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
@@ -23,31 +16,31 @@ function updateActiveSection() {
 }
 
 const revealElements = document.querySelectorAll(
-    ".card, .project-card, .timeline-card, .experience-card, .section-card, .resume-box, .contact-box, .portrait-panel, .hero-copy"
+    ".hero-copy, .metrics-strip article, .section-title, .section-body, .comparison-panel, .trust-section > h2, .skill-band article, .experience-panel, .project-card, .logo-row span, .final-cta > div, .footer-cta > *, .site-footer"
 );
 
-const revealObserver = new IntersectionObserver(
+const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
-                revealObserver.unobserve(entry.target);
+                observer.unobserve(entry.target);
             }
         });
     },
     {
-        threshold: 0.14,
-        rootMargin: "0px 0px -40px 0px",
+        threshold: 0.12,
+        rootMargin: "0px 0px -48px 0px",
     }
 );
 
-revealElements.forEach((element) => revealObserver.observe(element));
-
-window.addEventListener("scroll", updateActiveSection, { passive: true });
-window.addEventListener("load", () => {
-    document.body.classList.add("loaded");
-    updateActiveSection();
+revealElements.forEach((element) => {
+    element.classList.add("reveal");
+    observer.observe(element);
 });
+
+window.addEventListener("scroll", updateActiveLink, { passive: true });
+window.addEventListener("load", updateActiveLink);
 
 function downloadResume() {
     const link = document.createElement("a");

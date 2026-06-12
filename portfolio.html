@@ -8,176 +8,156 @@
 </head>
 
 <body>
-    <div class="section-indicator" aria-hidden="true">
-        <span id="current-section">HOME</span>
+    <div class="visual-noise" aria-hidden="true"></div>
+    <div class="hero-visual" aria-hidden="true">
+        <img src="assets/portfolio-hero-abstract.png" alt="">
     </div>
 
-    <nav class="navbar" aria-label="Primary navigation">
-        <a class="logo" href="#home" aria-label="Samiksha Das home">
-            <span class="logo-mark">SD</span>
+    <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Samiksha Das home">
+            <span class="brand-mark">SD</span>
             <span>Samiksha Das</span>
         </a>
 
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-        <a class="nav-action" href="assets/Samiksha_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="nav-button" href="assets/Samiksha_Resume.pdf" target="_blank" rel="noopener">Resume</a>
     </nav>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-kicker">
-                <span>Information Science Engineering</span>
-                <span>AI + Software Development</span>
-            </div>
+        <section id="home" class="hero-section">
+            <div class="hero-copy">
+                <p class="eyebrow">Information Science Engineering / AI + Software Development</p>
+                <h1>AI Enthusiast <br>&amp; Software Developer</h1>
+                <p class="hero-summary">
+                    Information Science Engineering student passionate about Artificial Intelligence
+                    and software development, transforming ideas into real-world solutions through
+                    machine learning, computer vision, and modern web technologies.
+                </p>
 
-            <h1>
-                <span>AI Enthusiast</span>
-                <span>& Software</span>
-                <span>Developer</span>
-            </h1>
-
-            <div class="hero-grid">
-                <div class="portrait-panel" aria-label="Stylized Samiksha Das portrait placeholder">
-                    <div class="portrait-initials">SD</div>
-                    <div class="portrait-caption">
-                        <span>Samiksha Das</span>
-                        <small>Machine learning explorer</small>
-                    </div>
-                </div>
-
-                <div class="hero-copy">
-                    <p>
-                        Information Science Engineering student passionate about Artificial Intelligence
-                        and software development, transforming ideas into real-world solutions through
-                        machine learning, computer vision, and modern web technologies.
-                    </p>
-
-                    <ul class="slash-list" aria-label="Core focus areas">
-                        <li>AI & Machine Learning</li>
-                        <li>Computer Vision</li>
-                        <li>Full-Stack Development</li>
-                        <li>Data Science</li>
-                    </ul>
-
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn">View Projects</a>
-                        <a href="assets/Samiksha_Resume.pdf" target="_blank" rel="noopener" class="btn secondary">View Resume</a>
-                    </div>
+                <div class="hero-actions">
+                    <a class="button-primary" href="#projects">View Projects</a>
+                    <a class="button-secondary" href="#about">Learn More</a>
                 </div>
             </div>
         </section>
 
-        <div class="work-marquee" aria-hidden="true">
-            <div class="marquee-track">
-                <span class="orb"></span>
-                <span>Recent Work</span>
-                <span class="orb"></span>
-                <span>Recent Work</span>
-                <span class="orb"></span>
-                <span>Recent Work</span>
-                <span class="orb"></span>
-                <span>Recent Work</span>
-            </div>
-        </div>
+        <section class="metrics-strip" aria-label="Portfolio highlights">
+            <article>
+                <strong>2023</strong>
+                <span>B.E Information Science Engineering</span>
+            </article>
+            <article>
+                <strong>4</strong>
+                <span>AI, vision, data, and web projects</span>
+            </article>
+            <article>
+                <strong>4</strong>
+                <span>Core focus areas</span>
+            </article>
+            <article>
+                <strong>2025</strong>
+                <span>AI internship experience</span>
+            </article>
+        </section>
 
-        <section id="about">
-            <div class="section-heading">
-                <span>01 / About</span>
+        <section id="about" class="split-section">
+            <div class="section-title">
+                <p class="eyebrow">01 / About</p>
                 <h2>Building practical AI systems for real problems.</h2>
             </div>
 
-            <div class="section-card">
+            <div class="section-body">
                 <p>
                     I am an Information Science Engineering student interested in Artificial Intelligence
                     and software development, with foundational knowledge in C programming and experience
                     in academic projects. I enjoy building practical applications that solve real-world
                     problems, from AI chatbots to object detection systems.
                 </p>
+
+                <div class="focus-list" aria-label="Core focus areas">
+                    <span>AI &amp; Machine Learning</span>
+                    <span>Computer Vision</span>
+                    <span>Full-Stack Development</span>
+                    <span>Data Science</span>
+                </div>
             </div>
         </section>
 
-        <section id="education">
-            <div class="section-heading">
-                <span>02 / Education</span>
+        <section id="education" class="comparison-section">
+            <div class="section-title compact">
+                <p class="eyebrow">02 / Education</p>
                 <h2>Academic path.</h2>
             </div>
 
-            <div class="timeline">
-                <article class="timeline-card">
-                    <div>
-                        <h3>B.E Information Science Engineering</h3>
-                        <p>Jyothy Institute of Technology</p>
-                    </div>
+            <div class="comparison-panel">
+                <div class="panel-head">
+                    <span>Program</span>
+                    <span>Institution</span>
+                    <span>Timeline</span>
+                </div>
+                <article>
+                    <span>B.E Information Science Engineering</span>
+                    <span>Jyothy Institute of Technology</span>
                     <span>2023 - Present</span>
                 </article>
-
-                <article class="timeline-card">
-                    <div>
-                        <h3>PUC - Science</h3>
-                        <p>Sadhana PU College</p>
-                    </div>
+                <article>
+                    <span>PUC - Science</span>
+                    <span>Sadhana PU College</span>
                     <span>2021 - 2023</span>
                 </article>
-
-                <article class="timeline-card">
-                    <div>
-                        <h3>ICSE</h3>
-                        <p>Carmel School</p>
-                    </div>
+                <article>
+                    <span>ICSE</span>
+                    <span>Carmel School</span>
                     <span>2011 - 2021</span>
                 </article>
             </div>
         </section>
 
-        <section id="skills">
-            <div class="section-heading">
-                <span>03 / Skills</span>
-                <h2>Tools I use to turn ideas into working products.</h2>
-            </div>
+        <section id="skills" class="trust-section">
+            <p class="eyebrow">03 / Skills</p>
+            <h2>Tools I use to turn ideas into working products.</h2>
 
-            <div class="skills-grid">
-                <article class="card">
-                    <span class="card-number">/ 01</span>
+            <div class="skill-band">
+                <article>
+                    <small>/ 01</small>
                     <h3>Programming</h3>
                     <p>Python, C, JavaScript</p>
                 </article>
-
-                <article class="card">
-                    <span class="card-number">/ 02</span>
+                <article>
+                    <small>/ 02</small>
                     <h3>Web Development</h3>
                     <p>HTML, CSS, Node.js, Express.js</p>
                 </article>
-
-                <article class="card">
-                    <span class="card-number">/ 03</span>
+                <article>
+                    <small>/ 03</small>
                     <h3>Database</h3>
                     <p>MongoDB</p>
                 </article>
-
-                <article class="card">
-                    <span class="card-number">/ 04</span>
-                    <h3>AI & ML</h3>
+                <article>
+                    <small>/ 04</small>
+                    <h3>AI &amp; ML</h3>
                     <p>YOLOv8, NLP, Deep Learning, GPT APIs</p>
                 </article>
             </div>
         </section>
 
-        <section id="experience">
-            <div class="section-heading">
-                <span>04 / Experience</span>
+        <section id="experience" class="split-section">
+            <div class="section-title">
+                <p class="eyebrow">04 / Experience</p>
                 <h2>Hands-on learning in AI workflows.</h2>
             </div>
 
-            <article class="experience-card">
-                <div class="experience-header">
+            <div class="experience-panel">
+                <div class="experience-heading">
                     <div>
+                        <p class="eyebrow">CodeAlpha</p>
                         <h3>AI Internship Program</h3>
-                        <p>CodeAlpha</p>
                     </div>
                     <span>November 2025</span>
                 </div>
@@ -188,21 +168,21 @@
                     <li>Implemented data preprocessing techniques.</li>
                     <li>Learned AI workflows and model implementation.</li>
                 </ul>
-            </article>
+            </div>
         </section>
 
-        <section id="projects">
-            <div class="section-heading">
-                <span>05 / Projects</span>
+        <section id="projects" class="assets-section">
+            <div class="section-title centered">
+                <p class="eyebrow">05 / Projects</p>
                 <h2>Recent work across AI, vision, and web apps.</h2>
             </div>
 
-            <div class="projects-grid">
+            <div class="project-grid">
                 <article class="project-card">
                     <span class="project-index">01</span>
                     <h3>EVOQ AI Chatbot</h3>
                     <p>Groqcloud-powered chatbot using Node.js and Express.</p>
-                    <div class="project-buttons">
+                    <div>
                         <a href="assets/project-pages/evoq.html">Details</a>
                         <a href="#">GitHub</a>
                     </div>
@@ -212,7 +192,7 @@
                     <span class="project-index">02</span>
                     <h3>YOLOv8 Object Detection</h3>
                     <p>Real-time object detection and tracking.</p>
-                    <div class="project-buttons">
+                    <div>
                         <a href="assets/project-pages/yolo.html">Details</a>
                         <a href="#">GitHub</a>
                     </div>
@@ -222,7 +202,7 @@
                     <span class="project-index">03</span>
                     <h3>Demand Forecasting</h3>
                     <p>Forecasting using XGBoost and Neural Networks.</p>
-                    <div class="project-buttons">
+                    <div>
                         <a href="assets/project-pages/demand-forecasting.html">Details</a>
                         <a href="#">GitHub</a>
                     </div>
@@ -232,7 +212,7 @@
                     <span class="project-index">04</span>
                     <h3>Moodify</h3>
                     <p>Mood-based music recommendation platform.</p>
-                    <div class="project-buttons">
+                    <div>
                         <a href="assets/project-pages/moodify.html">Details</a>
                         <a href="#">GitHub</a>
                     </div>
@@ -240,44 +220,38 @@
             </div>
         </section>
 
-        <section id="certifications">
-            <div class="section-heading">
-                <span>06 / Certifications</span>
-                <h2>Learning milestones.</h2>
-            </div>
+        <section id="certifications" class="trust-section certificate-section">
+            <p class="eyebrow">06 / Certifications</p>
+            <h2>Learning milestones.</h2>
 
-            <div class="cert-grid">
-                <article class="card">Fundamentals in Python</article>
-                <article class="card">Fundamentals of Deep Learning - NVIDIA</article>
-                <article class="card">Foundations of AI - HP</article>
+            <div class="logo-row" aria-label="Certifications">
+                <span>Fundamentals in Python</span>
+                <span>Fundamentals of Deep Learning - NVIDIA</span>
+                <span>Foundations of AI - HP</span>
             </div>
         </section>
 
-        <section id="resume">
-            <div class="section-heading">
-                <span>07 / Resume</span>
+        <section id="resume" class="final-cta">
+            <div>
+                <p class="eyebrow">07 / Resume</p>
                 <h2>Complete background and experience.</h2>
-            </div>
-
-            <div class="resume-box">
                 <p>
                     Download my complete resume to learn more about my education, skills,
                     projects and experience.
                 </p>
-                <button onclick="downloadResume()" class="btn">Download Resume</button>
+                <button class="button-primary" onclick="downloadResume()">Download Resume</button>
             </div>
         </section>
 
-        <section id="contact">
-            <div class="section-heading">
-                <span>08 / Contact</span>
+        <section id="contact" class="footer-cta">
+            <div>
+                <p class="eyebrow">08 / Contact</p>
                 <h2>Let us build something useful.</h2>
             </div>
 
-            <div class="contact-box">
-                <a class="email-link" href="mailto:samikshadas08@gmail.com">samikshadas08@gmail.com</a>
-
-                <div class="socials" aria-label="Social links">
+            <div class="contact-links">
+                <a href="mailto:samikshadas08@gmail.com">samikshadas08@gmail.com</a>
+                <div>
                     <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
                     <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
                 </div>
@@ -285,8 +259,9 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Samiksha Das. All Rights Reserved.</p>
+    <footer class="site-footer">
+        <span>Samiksha Das</span>
+        <span>&copy; 2026 Samiksha Das. All Rights Reserved.</span>
     </footer>
 
     <script src="js/script.js"></script>
