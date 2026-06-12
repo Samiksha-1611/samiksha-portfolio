@@ -1,0 +1,11 @@
+.edge-profile/
+.edge-profile-desktop-2/
+.edge-profile-mobile/
+.edge-profile-mobile-2/
+.edge-profile-mobile-3/
+.edge-profile-mobile-4/
+.edge-profile-mobile-5/
+.edge-reference-tresmares/
+
+.vscode/
+node_modules/
