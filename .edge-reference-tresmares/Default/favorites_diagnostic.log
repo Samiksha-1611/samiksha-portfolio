@@ -1,0 +1,10 @@
+2026-06-12 14:34:40.573: [INFO] OnDoneLoading sync enabled: 0
+2026-06-12 14:34:40.750: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-06-12 14:34:41.113: [INFO] VisibilityChanged: 0
+2026-06-12 14:34:43.590: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-06-12 14:34:43.597: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-06-12 14:34:43.602: [INFO] Primary account changed.
+2026-06-12 14:34:43.602: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-06-12 14:34:43.614: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-06-12 14:34:47.490: [INFO] BookmarkNodeAdded, ABU: 0
+2026-06-12 14:34:49.670: [INFO] Sync initialization duration: 5917ms

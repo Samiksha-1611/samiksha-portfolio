@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moodify - Project Details</title>
+<link rel="stylesheet" href="../../css/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<style>
+    .project-details {
+        padding-top: 100px;
+    }
+    .project-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .project-header h1 {
+        font-size: 48px;
+        font-family: 'Space Grotesk', sans-serif;
+        margin-bottom: 15px;
+        background: linear-gradient(135deg, var(--accent), var(--orange));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .project-header .badge {
+        display: inline-block;
+        background: rgba(139, 92, 246, 0.2);
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        margin: 10px 5px;
+    }
+    .project-section {
+        background: rgba(21, 29, 62, 0.5);
+        border: 1px solid rgba(139, 92, 246, 0.1);
+        border-radius: 16px;
+        padding: 40px;
+        margin-bottom: 30px;
+        backdrop-filter: blur(10px);
+    }
+    .project-section h2 {
+        color: var(--accent);
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .project-section h2::after {
+        display: none;
+    }
+    .tech-stack {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .tech-item {
+        background: rgba(139, 92, 246, 0.1);
+        border: 1px solid rgba(139, 92, 246, 0.2);
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+        color: var(--text-secondary);
+        font-weight: 500;
+    }
+    .features-list {
+        list-style: none;
+        margin-top: 20px;
+    }
+    .features-list li {
+        padding: 12px 0;
+        padding-left: 30px;
+        position: relative;
+        color: var(--text-secondary);
+        line-height: 1.6;
+    }
+    .features-list li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: bold;
+    }
+    .back-btn {
+        display: inline-block;
+        margin-bottom: 40px;
+        color: var(--accent);
+        text-decoration: none;
+        transition: all var(--transition-fast);
+    }
+    .back-btn:hover {
+        margin-left: 10px;
+    }
+</style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Samiksha Das</div>
+    <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="project-details">
+    <div style="padding: 0 8%;">
+        <a href="../../index.html#projects" class="back-btn">← Back to Portfolio</a>
+        
+        <div class="project-header">
+            <h1>Moodify</h1>
+            <div>
+                <span class="badge">ML</span>
+                <span class="badge">Music Recommendation</span>
+                <span class="badge">Full Stack</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                Moodify is a mood-based video recommendation platform that suggests YouTube
+        videos according to a user's current emotional state. Users can enter their
+        mood through a simple interface, and the application communicates with a backend
+        recommendation engine to fetch personalized video suggestions. The platform
+        aims to enhance content discovery by providing recommendations tailored to
+        the user's emotions.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+        <li>Mood-based video recommendation system</li>
+        <li>Personalized YouTube video suggestions</li>
+        <li>Real-time recommendation generation</li>
+        <li>Simple and intuitive user interface</li>
+        <li>API-driven recommendation engine</li>
+        <li>Dynamic video embedding using YouTube</li>
+        <li>Fast content retrieval using Axios</li>
+        <li>Responsive React-based frontend</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-item">React.js</div>
+        <div class="tech-item">JavaScript</div>
+        <div class="tech-item">Vite</div>
+        <div class="tech-item">Axios</div>
+        <div class="tech-item">HTML5</div>
+        <div class="tech-item">CSS3</div>
+        <div class="tech-item">REST API</div>
+        <div class="tech-item">YouTube Embed API</div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>How It Works</h2>
+            <p>
+                <ul class="features-list" style="margin-top: 15px;">
+        <li><strong>Mood Input:</strong> User enters their current mood or emotional state through the application's input field.</li>
+        <li><strong>API Processing:</strong> The mood is sent to the backend recommendation engine using an Axios API request.</li>
+        <li><strong>Mood Analysis:</strong> The backend analyzes the user's mood and identifies the most relevant content category.</li>
+        <li><strong>Video Recommendation:</strong> The system fetches matching YouTube videos based on the detected mood.</li>
+        <li><strong>Dynamic Display:</strong> Recommended videos are embedded and displayed directly within the application for instant viewing.</li>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Mood Categories</h2>
+            <ul class="features-list">
+                <li>Happy - Positive and entertaining video recommendations</li>
+                <li>Motivated - Inspirational and goal-oriented content</li>
+             <li>Relaxed - Calming and stress-relief videos</li>
+             <li>Energetic - High-engagement and action-oriented content</li>
+             <li>Focused - Productivity and concentration-enhancing videos</li>
+             <li>Reflective - Thought-provoking and emotionally engaging content</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Project Links</h2>
+            <div style="margin-top: 20px;">
+                <a href="https://github.com/Samiksha-1611/Moodify.git" class="btn" style="margin-right: 15px;">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="https://github.com/Samiksha-1611/Moodify.git" class="btn secondary">
+                    <i class="fas fa-external-link-alt"></i> Try Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Samiksha Das. All Rights Reserved.</p>
+</footer>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>

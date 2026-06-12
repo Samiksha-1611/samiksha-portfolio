@@ -1,0 +1,5 @@
+2026/06/12-20:04:44.449 3f2c Creating DB E:\full_stack\day1\portfolio\.edge-reference-tresmares\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/06/12-20:04:44.534 3f2c Reusing MANIFEST E:\full_stack\day1\portfolio\.edge-reference-tresmares\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/06/12-20:04:50.235 3da4 Level-0 table #5: started
+2026/06/12-20:04:50.240 3da4 Level-0 table #5: 682680 bytes OK
+2026/06/12-20:04:50.242 3da4 Delete type=0 #3

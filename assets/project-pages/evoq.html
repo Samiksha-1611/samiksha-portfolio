@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EVOQ AI Chatbot - Project Details</title>
+<link rel="stylesheet" href="../../css/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<style>
+    .project-details {
+        padding-top: 100px;
+    }
+    .project-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .project-header h1 {
+        font-size: 48px;
+        font-family: 'Space Grotesk', sans-serif;
+        margin-bottom: 15px;
+        background: linear-gradient(135deg, var(--accent), var(--teal));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .project-header .badge {
+        display: inline-block;
+        background: rgba(139, 92, 246, 0.2);
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        margin: 10px 5px;
+    }
+    .project-section {
+        background: rgba(21, 29, 62, 0.5);
+        border: 1px solid rgba(139, 92, 246, 0.1);
+        border-radius: 16px;
+        padding: 40px;
+        margin-bottom: 30px;
+        backdrop-filter: blur(10px);
+    }
+    .project-section h2 {
+        color: var(--accent);
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .project-section h2::after {
+        display: none;
+    }
+    .tech-stack {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .tech-item {
+        background: rgba(139, 92, 246, 0.1);
+        border: 1px solid rgba(139, 92, 246, 0.2);
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+        color: var(--text-secondary);
+        font-weight: 500;
+    }
+    .features-list {
+        list-style: none;
+        margin-top: 20px;
+    }
+    .features-list li {
+        padding: 12px 0;
+        padding-left: 30px;
+        position: relative;
+        color: var(--text-secondary);
+        line-height: 1.6;
+    }
+    .features-list li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: bold;
+    }
+    .back-btn {
+        display: inline-block;
+        margin-bottom: 40px;
+        color: var(--accent);
+        text-decoration: none;
+        transition: all var(--transition-fast);
+    }
+    .back-btn:hover {
+        margin-left: 10px;
+    }
+</style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Samiksha Das</div>
+    <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../index.html#projects">Projects</a></li>
+        <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="project-details">
+    <div style="padding: 0 8%;">
+        <a href="../../index.html#projects" class="back-btn">← Back to Portfolio</a>
+        
+        <div class="project-header">
+            <h1>EVOQ AI Chatbot</h1>
+            <div>
+                <span class="badge">AI</span>
+                <span class="badge">Full Stack</span>
+                <span class="badge">GroqCloud</span>
+                <span class="badge">Express.js</span>
+                <span class="badge">JavaScript</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                 EVOQ is a full-stack AI chatbot application that enables users to interact with advanced
+        language models through a modern and responsive web interface. The chatbot is powered by
+        GroqCloud's AI models and provides real-time conversational responses. The project combines
+        a dynamic frontend built with HTML, CSS, and JavaScript with a Node.js and Express.js backend
+        that handles API communication and response generation.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                <li>AI-powered conversational chatbot using GroqCloud language models</li>
+                <li>Real-time message exchange between user and AI assistant</li>
+                <li>Responsive and modern chat interface</li>
+                <li>Conversation history management system</li>
+                <li>Voice control features including speech playback, pause and stop</li>
+                <li>File attachment support for image uploads</li>
+                <li>Error handling for failed API requests</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <div class="tech-stack">
+                 <div class="tech-item">HTML5</div>
+                 <div class="tech-item">CSS3</div>
+                 <div class="tech-item">JavaScript</div>
+                 <div class="tech-item">Node.js</div>
+                 <div class="tech-item">Express.js</div>
+                 <div class="tech-item">Groq SDK</div>
+                 <div class="tech-item">GroqCloud API</div>
+                 <div class="tech-item">REST API</div>
+        <div class="tech-item">JSON</div>
+        <div class="tech-item">Git</div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Architecture</h2>
+            <p>
+                The application follows a client-server architecture:
+                <ul class="features-list" style="margin-top: 15px;">
+                   <li><strong>Frontend:</strong> Interactive chat interface built with HTML, CSS, and JavaScript</li>
+                   <li><strong>Backend:</strong> Node.js and Express.js server handling user requests</li>
+                   <li><strong>AI Layer:</strong> GroqCloud API integration for AI-generated responses</li>
+                   <li><strong>Communication:</strong> REST API requests using JSON data exchange</li>
+                   <li><strong>User Experience:</strong> Real-time chat updates, voice controls, and conversation history</li>
+                </ul>
+            </p>
+        </div>
+        <h2>How It Works</h2>
+<p>
+    <ul class="features-list" style="margin-top: 15px;">
+        <li><strong>User Input:</strong> Users enter questions or prompts through the chatbot interface.</li>
+        <li><strong>Request Processing:</strong> The frontend sends the user's message to the Express.js backend through API requests.</li>
+        <li><strong>AI Generation:</strong> The backend communicates with GroqCloud's language model to generate intelligent responses.</li>
+        <li><strong>Response Delivery:</strong> AI-generated responses are returned to the frontend and displayed in the chat window.</li>
+        <li><strong>Conversation Management:</strong> The system maintains chat history to provide contextual and natural conversations.</li>
+    </ul>
+</p>
+
+        <div class="project-section">
+            <h2>Project Links</h2>
+            <div style="margin-top: 20px;">
+                <a href="#" class="btn" style="margin-right: 15px;">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="#" class="btn secondary">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Samiksha Das. All Rights Reserved.</p>
+</footer>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>
